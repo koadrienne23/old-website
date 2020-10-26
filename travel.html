@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Adrienne's Website</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="modal.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+        <header class="main-header">
+            <a href="index.html"><h1>Adrienne.</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li class="current-page"><a href="travel.html">Travel</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="https://www.instagram.com/adrienne_ko/"><img src="images/instagram.png" width="40" height="40"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100011136670722"><img src="images/facebook.png" width="40" height="40"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="main-content">
+            <h2>Click on the pins to see some of the places I've visited.</h2>
+            <div class="world-map">
+                <img src="images/world.png"/>
+            </div>
+            <div>
+                <img id="nyc" class="pin" src="images/pin.png"/>
+                <img id="la" class="pin" src="images/pin.png"/>
+                <img id="spain" class="pin" src="images/pin.png"/>
+                <img id="france" class="pin" src="images/pin.png"/>
+                <img id="seoul" class="pin" src="images/pin.png"/>
+                <img id="tokyo" class="pin" src="images/pin.png"/>
+                <img id="peru" class="pin" src="images/pin.png"/>
+                <img id="vancouver" class="pin" src="images/pin.png"/>
+                <img id="hanover" class="pin" src="images/pin.png"/>
+                <img id="italy" class="pin" src="images/pin.png"/>
+                <img id="santa-fe" class="pin" src="images/pin.png"/>
+                <img id="bahamas" class="pin" src="images/pin.png"/>
+            </div>
+            <div id="nyc-modal" class="modal">
+                <div class="modal-content">
+                  <span id="1" class="close">&times;</span>
+                  <h2>New York City<br>(Home)</h2>
+                  <div class="nyc-slides">
+                    <div class="slide"><img src="images/nyc1.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <p>1 / 5</p>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    </div>
+                    <p class="caption">March 27, 2004</p>
+                  </div>
+                  <div class="nyc-slides">
+                    <div class="slide"><img src="images/nyc2.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <p>2 / 5</p>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    </div>
+                    <p class="caption">May 10, 2019</p>
+                  </div>
+                  <div class="nyc-slides">
+                    <div class="slide"><img src="images/nyc3.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <p>3 / 5</p>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    </div>
+                    <p class="caption">June 17, 2019</p>
+                  </div>
+                  <div class="nyc-slides">
+                    <div class="slide"><img src="images/nyc4.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <p>4 / 5</p>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    </div>
+                    <p class="caption">April 20, 2018</p>
+                  </div>
+                  <div class="nyc-slides">
+                    <div class="slide"><img src="images/nyc5.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <p>5 / 5</p>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    </div>
+                    <p class="caption">October 19, 2018</p>
+                  </div>
+                </div>
+            </div>
+            <div id="la-modal" class="modal">
+                <div class="modal-content">
+                  <span id="2" class="close">&times;</span>
+                  <h2>Los Angeles</h2>
+                  <div class="la-slides">
+                    <div class="slide"><img src="images/la1.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                        <p>1 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                    </div>
+                    <p class="caption">December 17, 2019</p>
+                  </div>
+                  <div class="la-slides">
+                    <div class="slide"><img src="images/la2.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                        <p>2 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                    </div>
+                    <p class="caption">December 18, 2019</p>
+                  </div>
+                  <div class="la-slides">
+                    <div class="slide"><img src="images/la3.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                        <p>3 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                    </div>
+                    <p class="caption">December 20, 2019</p>
+                  </div>
+                </div>
+            </div>
+            <div id="spain-modal" class="modal">
+                <div class="modal-content">
+                  <span id="3" class="close">&times;</span>
+                  <h2>Spain</h2>
+                  <div class="spain-slides">
+                    <div class="slide"><img src="images/spain1.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                        <p>1 / 5</p>
+                        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                    </div>
+                    <p class="caption">February 16, 2019</p>
+                  </div>
+                  <div class="spain-slides">
+                    <div class="slide"><img src="images/spain2.jpg"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                        <p>2 / 5</p>
+                        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                    </div>
+                    <p class="caption">March 23, 2017</p>
+                  </div>
+                  <div class="spain-slides">
+                    <div class="slide"><img src="images/spain3.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                        <p>3 / 5</p>
+                        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                    </div>
+                    <p class="caption">February 18, 2019</p>
+                  </div>
+                  <div class="spain-slides">
+                    <div class="slide"><img src="images/spain4.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                        <p>4 / 5</p>
+                        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                    </div>
+                    <p class="caption">February 17, 2019</p>
+                  </div>
+                  <div class="spain-slides">
+                    <div class="slide"><img src="images/spain5.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                        <p>5 / 5</p>
+                        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                    </div>
+                    <p class="caption">February 16, 2019</p>
+                  </div>
+                </div>
+            </div>
+            <div id="france-modal" class="modal">
+                <div class="modal-content">
+                  <span id="4" class="close">&times;</span>
+                  <h2>France</h2>
+                  <div class="france-slides">
+                    <div class="slide"><img src="images/france1.jpg"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                        <p>1 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+                    </div>
+                    <p class="caption">March 19, 2019</p>
+                  </div>
+                  <div class="france-slides">
+                    <div class="slide"><img src="images/france2.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                        <p>2 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+                    </div>
+                    <p class="caption">November 25, 2017</p>
+                  </div>
+                  <div class="france-slides">
+                    <div class="slide"><img src="images/france3.jpg"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                        <p>3 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+                    </div>
+                    <p class="caption">March 18, 2019</p>
+                  </div>
+                </div>
+            </div>
+            <div id="seoul-modal" class="modal">
+                <div class="modal-content">
+                  <span id="5" class="close">&times;</span>
+                  <h2>South Korea</h2>
+                  <div class="korea-slides">
+                    <div class="slide"><img src="images/korea1.jpg"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                        <p>1 / 4</p>
+                        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                    </div>
+                    <p class="caption">July 14, 2019</p>
+                  </div>
+                  <div class="korea-slides">
+                    <div class="slide"><img src="images/korea2.jpg"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                        <p>2 / 4</p>
+                        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                    </div>
+                    <p class="caption">July 29, 2019</p>
+                  </div>
+                  <div class="korea-slides">
+                    <div class="slide"><img src="images/korea3.jpg"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                        <p>3 / 4</p>
+                        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                    </div>
+                    <p class="caption">August 1, 2018</p>
+                  </div>
+                  <div class="korea-slides">
+                    <div class="slide"><img src="images/korea4.jpg"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                        <p>4 / 4</p>
+                        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                    </div>
+                    <p class="caption">August 2, 2018</p>
+                  </div>
+                </div>
+            </div>
+            <div id="tokyo-modal" class="modal">
+                <div class="modal-content">
+                  <span id="6" class="close">&times;</span>
+                  <h2>Japan</h2>
+                  <div class="japan-slides">
+                    <div class="slide"><img src="images/japan1.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+                        <p>1 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+                    </div>
+                    <p class="caption">August 5, 2019</p>
+                  </div>
+                  <div class="japan-slides">
+                    <div class="slide"><img src="images/japan2.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+                        <p>2 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+                    </div>
+                    <p class="caption">August 6, 2019</p>
+                  </div>
+                  <div class="japan-slides">
+                    <div class="slide"><img src="images/japan3.jpg"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+                        <p>3 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+                    </div>
+                    <p class="caption">August 4, 2019</p>
+                  </div>
+                </div>
+            </div>
+            <div id="peru-modal" class="modal">
+                <div class="modal-content">
+                  <span id="7" class="close">&times;</span>
+                  <h2>Peru</h2>
+                  <div class="peru-slides">
+                    <div class="slide"><img src="images/peru1.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+                        <p>1 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+                    </div>
+                    <p class="caption">May 29, 2019</p>
+                  </div>
+                  <div class="peru-slides">
+                    <div class="slide"><img src="images/peru2.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+                        <p>2 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+                    </div>
+                    <p class="caption">May 27, 2019</p>
+                  </div>
+                  <div class="peru-slides">
+                    <div class="slide"><img src="images/peru3.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+                        <p>3 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+                    </div>
+                    <p class="caption">May 29, 2019</p>
+                  </div>
+                </div>
+            </div>
+            <div id="vancouver-modal" class="modal">
+                <div class="modal-content">
+                  <span id="8" class="close">&times;</span>
+                  <h2>Vancouver</h2>
+                  <div class="slide"><img src="images/vancouver.JPG"/></div>
+                  <p class="caption">June 5, 2006</p>
+                </div>
+            </div>
+            <div id="hanover-modal" class="modal">
+                <div class="modal-content">
+                  <span id="9" class="close">&times;</span>
+                  <h2>Hanover</h2>
+                  <div class="hanover-slides">
+                    <div class="slide"><img src="images/hanover1.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 9)">&#10094;</a>
+                        <p>1 / 4</p>
+                        <a class="next" onclick="plusSlides(1, 9)">&#10095;</a>
+                    </div>
+                    <p class="caption">November 12, 2019</p>
+                  </div>
+                  <div class="hanover-slides">
+                    <div class="slide"><img src="images/hanover2.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 9)">&#10094;</a>
+                        <p>2 / 4</p>
+                        <a class="next" onclick="plusSlides(1, 9)">&#10095;</a>
+                    </div>
+                    <p class="caption">September 1, 2019</p>
+                  </div>
+                  <div class="hanover-slides">
+                    <div class="slide"><img src="images/hanover3.png"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 9)">&#10094;</a>
+                        <p>3 / 4</p>
+                        <a class="next" onclick="plusSlides(1, 9)">&#10095;</a>
+                    </div>
+                    <p class="caption">October 13, 2019</p>
+                  </div>
+                  <div class="hanover-slides">
+                    <div class="slide"><img src="images/hanover4.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 9)">&#10094;</a>
+                        <p>4 / 4</p>
+                        <a class="next" onclick="plusSlides(1, 9)">&#10095;</a>
+                    </div>
+                    <p class="caption">February 29, 2020</p>
+                  </div>
+                </div>
+            </div>
+            <div id="italy-modal" class="modal">
+                <div class="modal-content">
+                  <span id="10" class="close">&times;</span>
+                  <h2>Italy</h2>
+                  <div class="italy-slides">
+                    <div class="slide"><img src="images/italy1.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 10)">&#10094;</a>
+                        <p>1 / 2</p>
+                        <a class="next" onclick="plusSlides(1, 10)">&#10095;</a>
+                    </div>
+                    <p class="caption">March 28, 2014</p>
+                  </div>
+                  <div class="italy-slides">
+                    <div class="slide"><img src="images/italy2.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 10)">&#10094;</a>
+                        <p>2 / 2</p>
+                        <a class="next" onclick="plusSlides(1, 10)">&#10095;</a>
+                    </div>
+                    <p class="caption">March 26, 2014</p>
+                  </div>
+                </div>
+            </div>
+            <div id="santa-fe-modal" class="modal">
+                <div class="modal-content">
+                  <span id="11" class="close">&times;</span>
+                  <h2>Santa Fe</h2>
+                  <div class="santa-fe-slides">
+                    <div class="slide"><img src="images/santa-fe1.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 11)">&#10094;</a>
+                        <p>1 / 2</p>
+                        <a class="next" onclick="plusSlides(1, 11)">&#10095;</a>
+                    </div>
+                    <p class="caption">April 1, 2016</p>
+                  </div>
+                  <div class="santa-fe-slides">
+                    <div class="slide"><img src="images/santa-fe2.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 11)">&#10094;</a>
+                        <p>2 / 2</p>
+                        <a class="next" onclick="plusSlides(1, 11)">&#10095;</a>
+                    </div>
+                    <p class="caption">April 1, 2016</p>
+                  </div>
+                </div>
+            </div>
+            <div id="bahamas-modal" class="modal">
+                <div class="modal-content">
+                  <span id="12" class="close">&times;</span>
+                  <h2>Bahamas</h2>
+                  <div class="bahamas-slides">
+                    <div class="slide"><img src="images/bahamas1.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 12)">&#10094;</a>
+                        <p>1 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 12)">&#10095;</a>
+                    </div>
+                    <p class="caption">September 1, 2013</p>
+                  </div>
+                  <div class="bahamas-slides">
+                    <div class="slide"><img src="images/bahamas2.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 12)">&#10094;</a>
+                        <p>2 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 12)">&#10095;</a>
+                    </div>
+                    <p class="caption">January 8, 2006</p>
+                  </div>
+                  <div class="bahamas-slides">
+                    <div class="slide"><img src="images/bahamas3.JPG"/></div>
+                    <div class="numbertext">
+                        <a class="prev" onclick="plusSlides(-1, 12)">&#10094;</a>
+                        <p>3 / 3</p>
+                        <a class="next" onclick="plusSlides(1, 12)">&#10095;</a>
+                    </div>
+                    <p class="caption">June 15, 2010</p>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <h3>Adrienne Ko's Website</h3>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="https://www.instagram.com/adrienne_ko/"><img src="images/instagram.png" width="30" height="30"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100011136670722"><img src="images/facebook.png" width="30" height="30"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+
+</html>

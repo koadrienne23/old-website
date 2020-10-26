@@ -1,0 +1,153 @@
+/* Body of webpage */
+body {
+	height: 100%;
+	margin: 0;
+	text-align: center;
+    width: 100%;
+    background-color: #fff9f5;
+    font-family: 'Inter', sans-serif;
+    color: #595857;
+}
+
+
+/* 
+* General text style
+*/
+
+p {
+    font-weight: 100;
+    font-size: 1.1rem;
+    letter-spacing: 0.6px;
+    word-spacing: 2.5px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 1.3px;
+}
+
+
+/* 
+* Header and Footer style
+*/
+
+/* Main navigation header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+/* Main navigation header - left side ("Adrienne.") */
+header h1 {
+    font-weight: 100;
+    font-size: 2.5rem;
+    letter-spacing: 2.5px;
+    float: left;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8ece9;
+    padding: 1rem;
+    text-align: center;
+}
+.footer li {
+    font-size: 1rem;
+}
+
+/* Main navigation header and footer - pages */
+header a, nav a {
+    color:#595857;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+/* Main navigation header and footer - insta and fb logos */
+header img, .footer img {
+    transform: translateY(8px);
+}
+
+nav li {
+    display: inline;
+    padding: 0 0.8rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    transform: translateY(-6px);
+}
+
+/* Underline current page and when mouse hovers the link */
+nav a:hover, .current-page {
+    text-decoration: underline;
+}
+
+
+
+/* 
+* Main page content style
+*/
+
+/* Main content container */
+.main-content {
+    max-width: 1200px;
+    padding: 4.5rem 10rem;
+    text-align: left;
+}
+
+section h2 {
+    margin-bottom: 4rem;
+}
+
+/* About me page - DALI section */
+.dali {
+    margin-top: 4rem;
+}
+
+/* About me and Research pages */
+.introduction img, .paper1 img { 
+    float: left; 
+    width: 45%; 
+    padding: 1rem; 
+    text-align: left; 
+} 
+
+.about-me, .paper1-description {
+    float: left; 
+    width: 40%; 
+    padding: 1rem; 
+    margin-left: 4rem;
+    margin-top: 2.5rem;
+    text-align: left; 
+}
+
+.paper1 {
+    margin-bottom: 7rem;
+}
+
+.paper2 img { 
+    float: right; 
+    width: 45%; 
+    padding: 1rem; 
+    text-align: left; 
+} 
+
+.paper2-description {
+    float: left; 
+    width: 40%; 
+    padding: 1rem; 
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+    text-align: left; 
+}
+
+.introduction:after, .paper1:after, .paper2:after {
+    content: "";
+    display: table;
+    clear: both;
+}

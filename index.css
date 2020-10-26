@@ -1,0 +1,58 @@
+/* Index page */
+.parallax {
+    background-image: url("images/parallax.jpeg");
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding-top: 28vh;
+    text-align: center;
+    font-size: 6vh;
+    color: #fff9f5;
+}
+
+.parallax-content h1 {
+    font-weight: 200;
+    transform: translateX(-18vw);
+}
+
+.parallax-content p {
+    padding-top: 24vh;
+    font-size: 2.5vh;
+}
+
+/* Position the scroll-down arrow */
+.parallax-content img {
+    transform: translateY(-4vh);
+}
+
+.welcome {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 30.33%;
+    text-align: center;
+    transform: translateX(15%);
+}
+
+.column img {
+    width: 80%;
+    height: auto;
+}
+
+.column h2 {
+    font-size: 1.8vw;
+}
+  
+/* Clear floats after the columns */
+.explore:after {
+    content: "";
+    display: table;
+    clear: both;
+}

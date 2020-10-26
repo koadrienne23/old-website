@@ -1,0 +1,115 @@
+/* The world map image */
+.world-map img {
+    width: 82vw;
+    height: auto;
+    transform: translateX(-3vw);
+}
+
+/* The pushpins */
+.pin {
+    position: absolute;
+    width: 1.5%;
+    height: auto;
+}
+
+/* Darken the pushpin when mouse is hovering */
+.pin:hover {
+    filter: brightness(0.9);
+}
+
+/* Place each pushpin in the corrrect location on the map */
+#nyc { transform: translateX(16.5vw) translateY(-31.8vw); }
+#la { transform: translateX(4.8vw) translateY(-30vw); }
+#spain { transform: translateX(34.1vw) translateY(-31.6vw); }
+#france { transform: translateX(34.6vw) translateY(-33.7vw); }
+#seoul { transform: translateX(65.2vw) translateY(-30.3vw); }
+#tokyo { transform: translateX(68.2vw) translateY(-29.9vw); }
+#peru { transform: translateX(14vw) translateY(-16vw); }
+#vancouver { transform: translateX(5.7vw) translateY(-33.6vw); }
+#hanover { transform: translateX(17.4vw) translateY(-33vw); }
+#italy { transform: translateX(37.2vw) translateY(-32vw); }
+#santa-fe { transform: translateX(7.6vw) translateY(-30.7vw); }
+#bahamas { transform: translateX(15vw) translateY(-26.4vw); }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #faf3f1;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+/* Modal box heading */
+.modal h2 {
+    margin: 4%;
+}
+
+/* The modal slide/photo container */
+.slide {
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+}
+
+/* The modal slide/photo */
+.slide img {
+    width: auto;
+    height: 100%;
+}
+
+/* The modal slide/photo caption */
+.caption {
+    margin: 3vh;
+    padding-bottom: 4vh;
+}
+  
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+/* On hover, darken the close button */
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    color: #595857;
+    font-size: 1.2rem;
+    transition: 0.6s ease;
+    float: inherit;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Text indicating current slide number */
+.numbertext {
+    display: inline-flex;
+    align-items: center;
+}
